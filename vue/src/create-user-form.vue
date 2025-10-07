@@ -83,4 +83,7 @@ const handleSubmit = async (e: Event) => {
     return;
   }
 
-  
+  isSubmitting.value = true;
+  showValidationErrors.value = false;
+
+ 
