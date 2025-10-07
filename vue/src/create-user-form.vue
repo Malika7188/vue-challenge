@@ -14,3 +14,7 @@ const apiError = ref('');
 const isSubmitting = ref(false);
 const showValidationErrors = ref(false);
 
+// Event emitter to communicate with the parent component (app.vue)
+// Emits 'create-successful' event when user account is successfully created
+const emit = defineEmits(['create-successful']);
+
