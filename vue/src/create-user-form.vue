@@ -77,4 +77,10 @@ const handleSubmit = async (e: Event) => {
   // Reset API error on new submission
   apiError.value = '';
 
+  // user can't submit the details if the username is empty or password doesn't meet requirements
+  if (!canSubmit.value) {
+    showValidationErrors.value = true;
+    return;
+  }
+
   
