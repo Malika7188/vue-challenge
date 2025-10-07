@@ -52,4 +52,7 @@ const validationCriteria = computed(() => {
 
 // Check if username is valid
 const isUsernameValid = computed(() => {
-  
+  return username.value.trim() !== '';
+});
+
+/
