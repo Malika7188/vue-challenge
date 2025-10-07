@@ -57,4 +57,6 @@ const isUsernameValid = computed(() => {
 
 // Check if password is valid
 const isPasswordValid = computed(() => {
-  
+  return password.value.length > 0 && validationCriteria.value.length === 0;
+});
+
