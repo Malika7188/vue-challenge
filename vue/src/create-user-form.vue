@@ -12,3 +12,5 @@ const password = ref('');
 // showValidationErrors: Shows validation errors when user tries to submit invalid form
 const apiError = ref('');
 const isSubmitting = ref(false);
+const showValidationErrors = ref(false);
+
