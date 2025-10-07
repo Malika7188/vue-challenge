@@ -28,4 +28,7 @@ const validationCriteria = computed(() => {
   }
 
   if (password.value.length > 24) {
+    criteria.push('Password must be at most 24 characters long');
+  }
+
   
