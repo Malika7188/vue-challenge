@@ -22,3 +22,7 @@ const emit = defineEmits(['create-successful']);
 // Returns an array of error messages for validation rules that are not met
 const validationCriteria = computed(() => {
   const criteria: string[] = [];
+
+  if (password.value.length < 10) {
+    criteria.push('Password must be at least 10 characters long');
+  }
