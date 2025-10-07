@@ -35,4 +35,6 @@ const validationCriteria = computed(() => {
     criteria.push('Password cannot contain spaces');
   }
 
-  
+  if (!/\d/.test(password.value)) {
+    criteria.push('Password must contain at least one number');
+  }
