@@ -64,3 +64,9 @@ const isPasswordValid = computed(() => {
 const canSubmit = computed(() => {
   return isUsernameValid.value && isPasswordValid.value;
 });
+
+// Check if password field should show aria-invalid
+const isPasswordInvalid = computed(() => {
+  return password.value.length > 0 && validationCriteria.value.length > 0;
+});
+
