@@ -50,3 +50,6 @@ const validationCriteria = computed(() => {
   return criteria;
 });
 
+// Check if username is valid
+const isUsernameValid = computed(() => {
+  
