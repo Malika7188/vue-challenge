@@ -10,3 +10,4 @@ const password = ref('');
 // apiError: Stores error messages returned from the API to display to users
 // isSubmitting: Tracks whether a submission is in progress to prevent duplicate requests
 // showValidationErrors: Shows validation errors when user tries to submit invalid form
+const apiError = ref('');
