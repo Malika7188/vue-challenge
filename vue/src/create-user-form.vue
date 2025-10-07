@@ -43,4 +43,8 @@ const validationCriteria = computed(() => {
     criteria.push('Password must contain at least one uppercase letter');
   }
 
+  if (!/[a-z]/.test(password.value)) {
+    criteria.push('Password must contain at least one lowercase letter');
+  }
+
   
