@@ -47,4 +47,6 @@ const validationCriteria = computed(() => {
     criteria.push('Password must contain at least one lowercase letter');
   }
 
-  
+  return criteria;
+});
+
