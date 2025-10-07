@@ -21,4 +21,4 @@ const emit = defineEmits(['create-successful']);
 // Computed property that dynamically validates password against all requirements
 // Returns an array of error messages for validation rules that are not met
 const validationCriteria = computed(() => {
-  
+  const criteria: string[] = [];
