@@ -70,3 +70,6 @@ const isPasswordInvalid = computed(() => {
   return password.value.length > 0 && validationCriteria.value.length > 0;
 });
 
+// Handle form submission
+const handleSubmit = async (e: Event) => {
+  e.preventDefault();
