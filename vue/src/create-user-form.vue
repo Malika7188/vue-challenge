@@ -11,3 +11,4 @@ const password = ref('');
 // isSubmitting: Tracks whether a submission is in progress to prevent duplicate requests
 // showValidationErrors: Shows validation errors when user tries to submit invalid form
 const apiError = ref('');
+const isSubmitting = ref(false);
