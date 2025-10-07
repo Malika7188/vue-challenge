@@ -73,3 +73,8 @@ const isPasswordInvalid = computed(() => {
 // Handle form submission
 const handleSubmit = async (e: Event) => {
   e.preventDefault();
+
+  // Reset API error on new submission
+  apiError.value = '';
+
+  
