@@ -60,3 +60,7 @@ const isPasswordValid = computed(() => {
   return password.value.length > 0 && validationCriteria.value.length === 0;
 });
 
+// Check if form can be submitted
+const canSubmit = computed(() => {
+  return isUsernameValid.value && isPasswordValid.value;
+});
