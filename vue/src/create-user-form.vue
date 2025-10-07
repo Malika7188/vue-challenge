@@ -31,4 +31,8 @@ const validationCriteria = computed(() => {
     criteria.push('Password must be at most 24 characters long');
   }
 
+  if (password.value.includes(' ')) {
+    criteria.push('Password cannot contain spaces');
+  }
+
   
